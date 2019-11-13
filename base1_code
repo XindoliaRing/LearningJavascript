@@ -1,0 +1,22 @@
+NaN === NaN; //false
+isNaN(NaN); //true
+
+var name = '小明';
+var age = 20;
+var message = `你好, ${name}, 你今年${age}岁了!`;
+//var message = '你好,' + name + ', 你今年' + age + '岁了!';
+alert(message);
+
+var s = 'Hello, world!';
+s.length; // 13
+
+var s = 'Hello, world!';
+s[0]; // 'H'
+s[6]; // ' '
+s[7]; // 'w'
+s[12]; // '!'
+s[13]; // undefined 超出范围的索引不会报错，但一律返回undefined
+
+var s = 'Test';
+s[0] = 'X';
+alert(s); // s仍然为'Test'
